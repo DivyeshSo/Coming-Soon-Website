@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+}
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #a0fff2;
+}
+#pn{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 500;
+}
+.content h1 span{
+    color: #37fcff;
+}
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: violet;    
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+    animation: rocket 3s linear infinite;
+}
+.launchingtime{
+    display: flex;
+}
+.launchingtime div{
+    flex-basis: 110px;
+}
+.launchingtime div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+.launchingtime span{
+    color: chartreuse;
+    font-size: 25px;
+    font-family: serif;
+    font-weight: 800;
+}
+.rocket{    
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 2;
+    }
+}
